@@ -2,6 +2,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSpring, animated } from 'react-spring';
 
+
+
 interface NavigationBarProps {
   isExclusiveOpen: boolean;
   toggleExclusiveDropdown: () => void;
@@ -150,15 +152,15 @@ className="absolute right-0 z-10 mt-4 w-[15rem] origin-top-right rounded-md bg-b
 return (
     <nav className="flex justify-around items-center p-4 text-neutral-900  ">
       {/* Exclusive Dropdown */}
-      <div className="relative" ref={dropdownRef}>
+      <div className="relative">
         <span
           className="font-bold lg:text-xl cursor-pointer"
-          onClick={toggleExclusiveDropdown}
+        
         >
           Exclusive
         </span>
         <animated.div
-          style={dropdownAnimation}
+        
           className="absolute top-[2.3rem] -left-[7.3rem] mt-2 w-[18rem] p-2 bg-white text-black border border-r-black text-center pb-6 pt-6  balzac"
         >
           {/* Dropdown content goes here */}
@@ -186,10 +188,10 @@ return (
         <div className="relative">
           <input
             type="text"
-            value={inputValue}
-            onChange={handleInputChange}
-              placeholder="What are you looking for"
-            value=""
+            name="username"
+            id="username"
+            autoComplete="username"
+            placeholder="search"
             className="pl-4 pr-16 py-2 border text-xs border-gray-300 rounded focus:outline-none focus:border-blue-500 "
           />
           <span className="absolute right-3 transform icon-[mingcute--search-line] text-gray-500 lg:h-5 lg:w-5 top-1/4"></span>

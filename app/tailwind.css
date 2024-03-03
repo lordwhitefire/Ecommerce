@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.BANNER1 {
+    @apply bg-[url('./assets/images/BANNER_1.png')] bg-cover bg-no-repeat bg-center
+  }
+
+  .BANNER3 {
+    @apply bg-[url('./assets/images/BANNER_3.png')] bg-cover bg-no-repeat bg-center
+  }
+
+  .BANNER4 {
+    @apply bg-[url('./assets/images/BANNER_4-1.png')] bg-cover bg-no-repeat bg-center
+  }
+
+  .BANNER6 {
+    @apply bg-[url('./assets/images/BANNER_6.png')] bg-cover bg-no-repeat bg-center
+  }
+
+  .Frame1 {
+    @apply bg-[url('./assets/images/Frame_1.png')] bg-cover bg-no-repeat bg-center
+  }
+
+  

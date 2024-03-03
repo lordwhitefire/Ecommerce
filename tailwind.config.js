@@ -5,11 +5,21 @@ const { addDynamicIconSelectors } = require('@iconify/tailwind');
 export default {
   content: ['./app/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customColor: '#ffad33', // Add your custom color here
+        customColor2: '#cda274',
+        customColor3: '#292f36',
+      },
+      
+    },
   },
   plugins: [
     // Add the @iconify/tailwind plugin
     addDynamicIconSelectors(),
   ],
 } satisfies Config
+
+
+
 

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import type { MetaFunction } from "@remix-run/node";
 import NavigationBar from '../components/NavigationBar';
 import BannerComponent from '../components/BannerComponent';
+import  KeyboardCard  from "../components/Todays";
+
 
 export const meta: MetaFunction = () => {
   return [
@@ -27,7 +29,7 @@ export default function Index() {
     <div>
       <NavigationBar isExclusiveOpen={isExclusiveOpen} toggleExclusiveDropdown={toggleExclusiveDropdown} />
       <BannerComponent bannerIsExclusiveOpen={bannerIsExclusiveOpen} setBannerIsExclusiveOpen={setBannerIsExclusiveOpen} />
-
+     <KeyboardCard />
      {/* <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1>
