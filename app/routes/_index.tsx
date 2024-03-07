@@ -2,7 +2,13 @@ import React, { useState } from 'react';
 import type { MetaFunction } from "@remix-run/node";
 import NavigationBar from '../components/NavigationBar';
 import BannerComponent from '../components/BannerComponent';
-import  KeyboardCard  from "../components/Todays";
+import  FlashSales  from "../components/flashsales";
+import CategoryComponent from '../components/categoryComponent';
+import  BestSelling  from "../components/bestSellingComponent";
+import MidBanner from '../components/midBanner';
+import Explore from '../components/exploreComponents'
+import FeaturedComponent from '../components/featuredComponent'
+import Footer from '../components/footer'
 
 
 export const meta: MetaFunction = () => {
@@ -26,10 +32,16 @@ export default function Index() {
   };
 
   return (
-    <div>
+    <div className='max-w-screen '>
       <NavigationBar isExclusiveOpen={isExclusiveOpen} toggleExclusiveDropdown={toggleExclusiveDropdown} />
       <BannerComponent bannerIsExclusiveOpen={bannerIsExclusiveOpen} setBannerIsExclusiveOpen={setBannerIsExclusiveOpen} />
-     <KeyboardCard />
+      <FlashSales />
+      <CategoryComponent />
+      <BestSelling />
+      <MidBanner />
+      <Explore />
+      <FeaturedComponent />
+      <Footer />
      {/* <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1>

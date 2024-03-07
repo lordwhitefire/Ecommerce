@@ -41,7 +41,7 @@ const BannerComponent: React.FC<BannerProps> = ({ bannerIsExclusiveOpen, setBann
   
   const circle = (
     <animated.div
-      className="flex justify-center w-[62rem] top-[27.5rem] absolute w-screen right-0 px-4 gap-x-4"
+      className="flex justify-center w-[68rem] top-[27.5rem] absolute w-screen right-0 px-4 gap-x-4"
     >
       {backgrounds.map((banner, index) => (
         <span
@@ -56,7 +56,7 @@ const BannerComponent: React.FC<BannerProps> = ({ bannerIsExclusiveOpen, setBann
     <div ref={bannerRef}>
       {/* Your other content */}
       <div
-        className={`flex  absolute w-[62rem] h-[25rem]  right-0 text-white ${currentBackground}`}
+        className={`flex  absolute w-[60rem] h-[25rem] rounded right-0 text-white ${currentBackground}`}
       >
         {/* Rest of your component remains unchanged */}
       </div>

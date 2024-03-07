@@ -157,7 +157,7 @@ return (
           className="font-bold lg:text-xl cursor-pointer"
         
         >
-          Exclusive
+          Epiphany
         </span>
         <animated.div
         

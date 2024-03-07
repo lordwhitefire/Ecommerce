@@ -15,13 +15,25 @@
   .BANNER4 {
     @apply bg-[url('./assets/images/BANNER_4-1.png')] bg-cover bg-no-repeat bg-center
   }
-
+  
   .BANNER6 {
     @apply bg-[url('./assets/images/BANNER_6.png')] bg-cover bg-no-repeat bg-center
   }
 
   .Frame1 {
     @apply bg-[url('./assets/images/Frame_1.png')] bg-cover bg-no-repeat bg-center
+  }
+  .Featured1 {
+    @apply bg-[url('./assets/images/ps5-slim-goedkope-playstation-large-1.png')] bg-cover bg-no-repeat bg-center
+  }
+  .Featured2 {
+    @apply bg-[url('./assets/images/attractive-woman-wearing-hat-posing-black-background-1.png')] bg-cover bg-no-repeat bg-center
+  }
+  .Featured3 {
+    @apply bg-[url('./assets/images/69-694768-amazon-echo-png-clipart-transparent-amazon-echo-png-1.png')] bg-contain bg-no-repeat bg-center
+  }
+  .Featured4 {
+    @apply bg-[url('./assets/images/65-2e-8-2cd-7-0aa-652-2dd-78510-9a-45590-4c.png')] bg-contain bg-no-repeat bg-center
   }
 
   
